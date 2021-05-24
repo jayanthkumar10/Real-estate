@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sell Assets-REMS </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <header class="header">
+            <br>
+            <h1 id="logo">Real Estate Management System- Project</h1>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <section class="top">
+            <img src="img/banner.png" alt="banner" class="banner" width="100%" height="90%">
+        </section>
+        <fieldset>
+            <br>
+            <br>
+            <h2>
+                <U><b>Fill the following property details: </b></U>
+            </h2>
+
+            <form class="needs-validation " method="post" action="sell.php" enctype="multipart/form-data">
+                <p>
+                    <label for="Description">Short Note : </label>
+                    <input type="text" class="form-control" name="description" placeholder="Add Note" value="" required>
+                    <div class="invalid-feedback">
+                        Description required.
+                    </div>
+                </p>
+                <p>
+                    <label for="City">City : </label>
+                    <input type="text" class="form-control" name="city" placeholder="Enter City" value="" required>
+                    <div class="invalid-feedback">
+                        City required.
+                    </div>
+                </p>
+                <p>
+                    <label for="BHK">BHK : </label>
+                    <input type="number" class="form-control" name="bhk" placeholder="Enter Number">
+                </p>
+                <p>
+                    <label for="area">Area(sq.ft) : </label>
+                    <input type="number" step="any" class="form-control" name="area" placeholder="Enter Number" value="" required>
+                    <div class="invalid-feedback">
+                        Area required
+                    </div>
+                </p>
+                <p>
+                    <label for="address">Address/Location : </label>
+                    <input type="text" class="form-control" name="address" placeholder="Enter address" value="" required>
+                    <div class="invalid-feedback">
+                        Address required.
+                    </div>
+                </p>
+                <p>
+                    <label for="price">Price(in INR) : </label>
+                    <input type="number" class="form-control" name="price" placeholder="Enter Number" value="" required>
+                    <div class="invalid-feedback">
+                        Price required in number format.
+                    </div>
+                </p>
+                <p>
+                    <label for="name">Seller Name : </label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter Name" value="" required>
+                    <div class="invalid-feedback">
+                        First Name required.
+                    </div>
+                </p>
+                <p>
+                    <label for="contact_number">Contact Number : </label>
+                    <input type="number" class="form-control" name="contact_number" placeholder="Contact Number" value="" required>
+                    <div class="invalid-feedback">
+                        Phone Number required.
+                    </div>
+                </p>
+                <p>
+                    <label for="mail">Email ID : </label>
+                    <input type="text" class="form-control" name="mail" placeholder="Mail ID" value="" required>
+                </p>
+                <p>
+                    <label for="file">Image </label>
+                    <input type="file" class="form-control" name="file" placeholder="Upload here" value="" required>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                </p>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

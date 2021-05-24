@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Feedback Form-REMS </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <header class="header">
+            <br>
+            <h1 id="logo">Real Estate Management System- Project</h1>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <section class="top">
+            <img src="img/banner.png" alt="banner" class="banner" width="100%" height="90%">
+        </section>
+        <fieldset>
+            <br>
+            <br>
+            <h2>
+                <U><b>Fill the form</b></U>
+            </h2>
+
+            <form class="needs-validation " method="post" action="feedback.php">
+                <p>
+                    <label for="Name">Your Name : </label>
+                    <input type="text" class="form-control" name="name" placeholder="Name" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </p>
+                <p>
+                    <label for="phone">Your Contact Number : </label>
+                    <input type="text" class="form-control" name="contact_number" placeholder="Phone" value="" required>
+                </p>
+                <p>
+                    <label for="rating">Rating(out of 5) : </label>
+                    <input type="number" class="form-control" name="rating" placeholder="rating" value="" required>
+                </p>
+                <p>
+                    <label for="message">Suggestions : </label>
+                    <textarea name="suggestions" class="form-control" placeholder="Message" required></textarea>
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                </p>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

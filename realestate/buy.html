@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BUY-Real Estate </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 id="logo">Real Estate Management System- Project</h1>
+    </header>
+
+    <hr>
+    <br>
+    <h1>BUY ASSETS</h1>
+    <br>
+
+    <main class="main">
+        <h1>RECENT TOP PICKS </h1>
+        <section class="shop">
+            <div class="box">
+                <img src="img/h1.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Vaibhav Villas</li>
+                        <li>3BHK,4BHK</li>
+                        <li>Vijayawada,India</li>
+                    </ul>
+                </p>
+                <h5 class="price">2Cr.- 4Cr.</h5>
+                <button class="click">Know More</button>
+            </div>
+
+            <div class="box">
+                <img src="img/h2.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Vasant Vihar</li>
+                        <li>5 BHK</li>
+                        <li>Hyderabad,India</li>
+                    </ul>
+                </p>
+                <h5 class="price"> 10Cr </h5>
+                <button class="click">Know More</button>
+            </div>
+
+            <div class="box">
+                <img src="img/h3.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Bharat Luxury Homes</li>
+                        <li>2BHK,3BHK</li>
+                        <li>Kakinada,India</li>
+                    </ul>
+                </p>
+                <h5 class="price"> 50L - 75L</h5>
+                <button class="click">Know More</button>
+            </div>
+
+            <div class="box">
+                <img src="img/h4.png" alt="home">
+                <p class="details">
+                    <UL>
+                        <LI>Whitefield villas</LI>
+                        <li>2BHK,3BHK,4BHK</li>
+                        <li>Banglore,India</li>
+                    </UL>
+                </p>
+                <h5 class="price"> 3Cr - 15 Cr </h5>
+                <button class="click">Know More</button>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="box">
+                <img src="img/dh1.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Partap Homes</li>
+                        <li>2BHK,3BHK</li>
+                        <li>Delhi,India</li>
+                    </ul>
+                </p>
+                <h5 class="price"> 35L - 60L</h5>
+                <button class="click">Know More</button>
+            </div>
+
+            <div class="box">
+                <img src="img/dh2.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Agent Hero Homes</li>
+                        <li>4BHK</li>
+                        <li>NewTown,Kolkata,India</li>
+                    </ul>
+                </p>
+                <h5 class="price"> 3.6 Cr</h5>
+                <button class="click">Know More</button>
+            </div>
+
+            <div class="box">
+                <img src="img/dh3.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Srinivasa Nilayam</li>
+                        <li>3BHK</li>
+                        <LI>Bhimavaram,India</LI>
+                    </ul>
+                </p>
+                <h5 class="price"> 2.5Cr </h5>
+                <button class="click">Know More</button>
+            </div>
+
+            <div class="box">
+                <img src="img/dh4.png" alt="home">
+                <p class="details">
+                    <ul>
+                        <li>Grand Egypt Villa</li>
+                        <li>4BHK</li>
+                        <li>Rajahmundry,India</li>
+                    </ul>
+                </p>
+                <h5 class="price"> 5Cr </h5>
+                <button class="click">Know More</button>
+            </div>
+        </section>
+        <fieldset>
+            <section>
+                <section align="center">
+                    <h3 align="center">Available Assets</h3>
+                    <br>
+                    <h2>
+                        <U><b>Fill the following details: </b></U>
+                    </h2>
+                    <br>
+                    <form class="needs-validation" method="post" action="buy.php">
+                        <p>
+                            <label for="budget">Budget : </label>
+                            <input type="number" class="form-control" name="budget" placeholder="Enter amount" value="" required>
+                            <div class="invalid-feedback">
+                                Enter correct budget..!
+                            </div>
+                        </p>
+                        <p>
+                            <label for="City">City : </label>
+                            <input type="text" class="form-control" name="city" placeholder="Enter City" value="" required>
+                            <div class="invalid-feedback">
+                                City required.
+                            </div>
+                        </p>
+                        <p>
+                            <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                        </p>
+                    </form>
+
+        </fieldset>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="f1">
+            <div class="line1">
+                <a href="#" class="nlinks"> <b>Developers</b></a>
+                <a href="sold.html" class="nlinks">Sold</a>
+            </div>
+            <div class="line2">
+                <a href="buy.html" target="_blank" class="nlinks">Buy</a>
+                <a href="sell.html" target="_blank" class="nlinks">Sell</a>
+                <a href="feedback.html" target="_blank" class="nlinks">Feedback</a>
+
+            </div>
+        </div>
+
+        <div class="f2">
+            <div class="topicons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+
+            <p class="copy"> &copy; WT_DBMS_Group </p>
+            <a href="#top"><i class="far fa-arrow-alt-circle-up"></i></a>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
